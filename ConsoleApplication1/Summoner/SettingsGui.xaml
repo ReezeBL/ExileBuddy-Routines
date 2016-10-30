@@ -1,0 +1,385 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d" 
+    d:DesignHeight="440" d:DesignWidth="627">
+
+    <Grid x:Name="Root" Margin="25">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+            <ColumnDefinition Width="25"></ColumnDefinition>
+            <ColumnDefinition Width="100*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!-- left column -->
+        <Grid Grid.Row="0" Grid.Column="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!-- flesh offering -->
+            <GroupBox Grid.Row="0" Grid.Column="0" Header="Flesh OFfering" Margin="0,0,0,25">
+
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Width="Auto">
+
+                    <!-- flesh offering enabled -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="EnabledFleshOfferingLabel"
+                           Content="Enabled"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"/>
+
+                        <CheckBox Name="EnabledFleshOfferingCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="25,6,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- flesh offering cd -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="CdFleshOffering"
+                           Content="Cooldown (ms)"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+
+                        <TextBox Name="CdFleshOfferingTextBox"
+                             Width="50" Height="25"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="25,0,0,0"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+            </GroupBox>
+
+            <!-- bone offering -->
+            <GroupBox Grid.Row="1" Grid.Column="0" Header="Bone Offering" Margin="0,0,0,25">
+
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Width="Auto">
+
+                    <!-- bone offering enabled -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="EnabledBoneOfferingLabel"
+                           Content="Enabled"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"/>
+
+                        <CheckBox Name="EnabledBoneOfferingCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="25,6,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- bone offering cd -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="CdBoneOffering"
+                           Content="Cooldown (ms)"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+
+                        <TextBox Name="CdBoneOfferingTextBox"
+                             Width="50" Height="25"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="25,0,0,0"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </GroupBox>
+
+            <!-- spirit offering -->
+            <GroupBox Grid.Row="2" Grid.Column="0" Header="Spirit OFfering" Margin="0,0,0,25">
+
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Width="Auto">
+
+                    <!-- spirit offering enabled -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="EnabledSpiritOfferingLabel"
+                           Content="Enabled"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"/>
+
+                        <CheckBox Name="EnabledSpiritOfferingCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="25,6,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- spirit offering cd -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="CdSpiritOffering"
+                           Content="Cooldown (ms)"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+
+                        <TextBox Name="CdSpiritOfferingTextBox"
+                             Width="50" Height="25"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="25,0,0,0"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+            </GroupBox>
+
+        </Grid>
+
+        <!-- right column -->
+        <Grid Grid.Row="0" Grid.Column="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!-- golems -->
+            <GroupBox Grid.Row="0" Grid.Column="0" Header="Golems" Margin="0,0,0,25">
+
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Width="Auto">
+
+                    <!-- golem cd -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="CdGolem"
+                           Content="Cooldown (ms)"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+
+                        <TextBox Name="CdGolemTextBox"
+                             Width="50" Height="25"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="25,0,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- stone golem -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <CheckBox Name="EnabledStoneGolemCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="0,6,0,0"/>
+
+                        <Label Name="EnabledStoneGolemLabel"
+                           Content="Stone Golem"
+                           HorizontalAlignment="Left"
+                           Margin="10,0,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- flame golem -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <CheckBox Name="EnabledFlameGolemCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="0,6,0,0"/>
+
+                        <Label Name="EnabledFlameGolemLabel"
+                           Content="Flame Golem"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Margin="10,0,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- chaos golem -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <CheckBox Name="EnabledChaosGolemCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="0,6,0,0"/>
+
+                        <Label Name="EnabledChaosGolemLabel"
+                           Content="Chaos Golem"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Margin="10,0,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- ice golem -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <CheckBox Name="EnabledIceGolemCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="0,6,0,0"/>
+
+                        <Label Name="EnabledIceGolemLabel"
+                           Content="Ice Golem"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Margin="10,0,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- lightning golem -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <CheckBox Name="EnabledLightningGolemCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="0,7,0,0"/>
+
+                        <Label Name="EnabledLightningGolemLabel"
+                           Content="Lightning Golem"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           Margin="10,0,0,0"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </GroupBox>
+
+            <!-- enduring cry -->
+            <GroupBox Grid.Row="1" Grid.Column="0" Header="__DISABLED__ Enduring Cry" Margin="0,0,0,25">
+
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Width="Auto">
+
+                    <!-- enduring cry enabled -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="EnabledEnduringCryLabel"
+                           Content="Enabled"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"/>
+
+                        <CheckBox Name="EnabledEnduringCryCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="25,6,0,0"
+                              IsEnabled="False" />
+
+                    </StackPanel>
+
+                    <!-- enduring cry cd -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="CdEnduringCry"
+                           Content="Cooldown (ms)"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+
+                        <TextBox Name="CdEnduringCryTextBox"
+                             Width="50" Height="25"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="25,0,0,0"
+                             IsReadOnly="True"
+                             IsEnabled="False"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </GroupBox>
+
+            <!-- immortal call -->
+            <GroupBox Grid.Row="2" Grid.Column="0" Header="__DISABLED__ Immortal Call" Margin="0,0,0,25">
+
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Vertical"
+                        Width="Auto">
+
+                    <!-- immortal call enabled -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="EnabledImmortalCallLabel"
+                           Content="Enabled"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"/>
+
+                        <CheckBox Name="EnabledImmortalCallCheckBox"
+                              HorizontalAlignment="Left"
+                              VerticalAlignment="Top"
+                              Margin="25,6,0,0"
+                              IsEnabled="False" />
+
+                    </StackPanel>
+
+                    <!-- immortal call cd -->
+                    <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+
+                        <Label Name="CdImmortalCall"
+                           Content="Cooldown (ms)"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top" />
+
+                        <TextBox Name="CdImmortalCallTextBox"
+                             Width="50" Height="25"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="25,0,0,0"
+                             IsReadOnly="True"
+                             IsEnabled="False"/>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </GroupBox>
+
+        </Grid>
+        
+
+        
+
+        
+
+        
+
+        
+
+    </Grid>
+
+</UserControl>
